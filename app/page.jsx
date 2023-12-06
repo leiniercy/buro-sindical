@@ -1,9 +1,13 @@
+import CustomFieldset from '@components/CustomFieldset';
+import Prueba from '@components/Prueba';
 import React from 'react';
 
 const Home = () => {
-  return (
-    <div>page</div>
-  )
+  return (<>
+          <CustomFieldset>
+            
+          </CustomFieldset>
+    </>);
 }
 
-export default page;
+export default Home;
