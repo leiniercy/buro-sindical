@@ -5,6 +5,8 @@ import 'aos/dist/aos.css';
 import React, { useState, useEffect } from 'react';
 import CustomCarrusel from '@components/CustomCarrusel';
 import CustomAreaSindical from '@components/CustomAreaSindical';
+import CustomFooter from '@components/CustomFooter';
+import CustomDonante from '@components/CustomDonante';
 
 export default function Home() {
 
@@ -20,6 +22,8 @@ return (
         <div className="card">
             <CustomCarrusel />
             <CustomAreaSindical/>
+            <CustomDonante/>
+            <CustomFooter/>
         </div>
 )}
 
