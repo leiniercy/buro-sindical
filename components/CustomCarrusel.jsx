@@ -4,8 +4,7 @@ import { Button } from 'primereact/button';
 import { Carousel } from 'primereact/carousel';
 import { Tag } from 'primereact/tag';
 
-export default function CustomCarrusel() {
-    const [products, setProducts] = useState([]);
+export default function CircularDemo() {
     const responsiveOptions = [
         {
             breakpoint: '1199px',
@@ -22,49 +21,34 @@ export default function CustomCarrusel() {
             numVisible: 1,
             numScroll: 1
         }
+        
     ];
-
-    const getSeverity = (product) => {
-        switch (product.inventoryStatus) {
-            case 'INSTOCK':
-                return 'success';
-
-            case 'LOWSTOCK':
-                return 'warning';
-
-            case 'OUTOFSTOCK':
-                return 'danger';
-
-            default:
-                return null;
-        }
-    };
-
-    useEffect(() => {
- }, []);
-
-    const productTemplate = (product) => {
+    const Carousel = () => {
         return (
             <div className="border-1 surface-border border-round m-2 text-center py-5 px-3">
                 <div className="mb-3">
-                    <img src={`https://primefaces.org/cdn/primereact/images/product/${product.image}`} alt={product.name} className="w-6 shadow-2" />
+                    <img src={'/public/assets/image/Agenda-sindical.jpg'} alt='' className="w-6 shadow-2" />
                 </div>
                 <div>
-                    <h4 className="mb-1">{product.name}</h4>
-                    <h6 className="mt-0 mb-3">${product.price}</h6>
-                    <Tag value={product.inventoryStatus} severity={getSeverity(product)}></Tag>
                     <div className="mt-5 flex flex-wrap gap-2 justify-content-center">
-                        <Button icon="pi pi-search" rounded />
-                        <Button icon="pi pi-star-fill" rounded severity="success" />
+                        <img src={'/assets/image/istockphoto-1250668894-612x612.jpg'} alt='' className="w-6 shadow-2" />
+                        <img src={'/assets/imag/istockphoto-1435663549-612x612.jpg'} alt='' className="w-6 shadow-2" />
+                        <img src={'/assets/imag/concepto-delegacion-autoridad-cargos_1016-1257.avif'} alt='' className="w-6 shadow-2" />
                     </div>
                 </div>
             </div>
         );
-    };
+    }
+
+
+    useEffect(() => {
+    }, []);
+
 
     return (
         <div className="card">
-            <Carousel value={products} numVisible={3} numScroll={3} responsiveOptions={responsiveOptions} itemTemplate={productTemplate} />
+            <Carousel value={''} numVisible={3} numScroll={3} responsiveOptions={responsiveOptions} className="custom-carousel" circular
+            autoplayInterval={3000}/>
         </div>
     )
 }
