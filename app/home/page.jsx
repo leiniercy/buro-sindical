@@ -1,11 +1,9 @@
 'use client'
 import { TabMenu } from 'primereact/tabmenu';
 import React, { useState, useEffect } from 'react';
-import { Button } from 'primereact/button';
-import { Carousel } from 'primereact/carousel';
-import { Tag } from 'primereact/tag';
 import CustomCarrusel from '@components/CustomCarrusel';
 import CustomAreaSindical from '@components/CustomAreaSindical';
+
 export default function Home() {
   const items = [
       {label: 'Home', icon: 'pi pi-fw pi-home'},
