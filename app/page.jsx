@@ -3,7 +3,7 @@ import { InputText } from 'primereact/inputtext';
 import { Button } from 'primereact/button';
 
 
-const Home = () => {
+const Login = () => {
   return (<>
     <div className="flex align-items-center justify-content-center h-screen">
       <div className="surface-card p-4 shadow-2 border-round w-full lg:w-6">
@@ -33,4 +33,4 @@ const Home = () => {
   </>);
 }
 
-export default Home;
+export default Login;
