@@ -36,7 +36,7 @@ export default function CustomCarrusel() {
     const itemTemplate = (slide) => {
 ;
         return (
-            <div className="h-18rem w-18rem border-1 surface-border border-round m-2 text-center py-5 px-3">
+            <div className="h-30rem w-full border-1 surface-border border-round m-2 text-center py-5 px-3">
                 <img className='h-full w-full' src={slide.url} alt='image'></img>
             </div>
         );
@@ -44,7 +44,7 @@ export default function CustomCarrusel() {
 
     return (
         <div className="card">
-            <Carousel value={slides} numVisible={3} numScroll={3} responsiveOptions={responsiveOptions} itemTemplate={itemTemplate} circular autoplayInterval={3000}  />
+            <Carousel value={slides} numVisible={1} numScroll={8} responsiveOptions={responsiveOptions} itemTemplate={itemTemplate} circular autoplayInterval={3000}  />
         </div>
     )
 }
