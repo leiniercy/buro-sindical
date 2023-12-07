@@ -1,6 +1,6 @@
 import "primereact/resources/primereact.min.css";
 import 'primeflex/primeflex.css';
-import 'primereact/resources/themes/md-dark-indigo/theme.css';
+import 'primereact/resources/themes/viva-dark/theme.css';
 import 'primeicons/primeicons.css';
 import '@styles/global.css';
 
