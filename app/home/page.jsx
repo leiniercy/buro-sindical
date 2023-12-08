@@ -19,7 +19,7 @@ export default function Home() {
 
 
 return (
-        <div className="card">
+        <div className="block w-full ">
             <CustomCarrusel />
             <CustomAreaSindical/>
             <CustomDonante/>
